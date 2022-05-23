@@ -23,13 +23,13 @@ public class AlunoService {
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
-    @RabbitListener(queues = "fila-igor-gorini", ackMode = "AUTO")
+    @RabbitListener(queues = "fila-joao-sotoriva", ackMode = "AUTO")
     private void salvarAlunoPelaFila(Aluno aluno){
-        repository.save(aluno);
+        this.repository.save(aluno);
     }
 
     public Optional<Aluno> buscarPorId(Long id) {
-        return repository.findById(id);
+        return this.repository.findById(id);
     }
 
     public Page<Aluno> findAll(String nome, Pageable pageable) {
