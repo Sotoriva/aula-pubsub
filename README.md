@@ -4,6 +4,8 @@ chmod +x mvnw
 
 ./mvnw spring-boot:run
 
+http://nelsonsar.github.io/2013/10/29/AMQP-building-blocks.html
+
 https://www.cloudamqp.com/
 https://api.cloudamqp.com/console/7ff29f18-18a0-4433-9b1c-1b96e724d27b/details
 user: xidvanap
